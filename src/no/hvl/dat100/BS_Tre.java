@@ -27,7 +27,7 @@ public class BS_Tre<T extends Comparable<? super T>> implements SoektreInterface
 	/**
 	 * Henter et element i treet.
 	 * 
-	 * @param element elementet vi leiter etter.
+	 * @param element elementet vi leter etter.
 	 * @return Elementet dersom det finst, elles null.
 	 */
 	public T finn(T element) {
@@ -37,7 +37,7 @@ public class BS_Tre<T extends Comparable<? super T>> implements SoektreInterface
 	private T finn(T element, BinaerTreNode<T> p) {
 		T svar = null;
 
-		// p == null -> tomt tre som er basistille og svar blir null
+		// p == null -> tomt tre som er basistillfelle og svar blir null
 		if (p != null) {
 			int sml = element.compareTo(p.getElement());
 			if (sml == 0) {
@@ -52,11 +52,11 @@ public class BS_Tre<T extends Comparable<? super T>> implements SoektreInterface
 	}
 
 	/**
-	 * Legg eit element til treet dersom det ikkje finst fr� f�r. Elles etstattar
-	 * blir det gamle elementet erstatta med det nye.
+	 * Legg et element til treet dersom det ikke finst fr� f�r. Elles ertstatter
+	 * blir det gamle elementet erstattet med det nye.
 	 * 
-	 * @param nyElement elementet som skal leggast til
-	 * @return null om elementet ikkje finst fr� f�r. Elles det element som var i
+	 * @param nyElement elementet som skal legges til
+	 * @return null om elementet ikke finst fr� f�r. Ellers det element som var i
 	 *         treet fr� f�r.
 	 */
 	public T leggTil(T nyElement) {
@@ -79,19 +79,19 @@ public class BS_Tre<T extends Comparable<? super T>> implements SoektreInterface
 	}
 
 	/**
-	 * Fjernar eit element fr� treet.
+	 * Fjernar et element fr� treet.
 	 * 
-	 * @param element elementet som skal fjernast.
-	 * @return elementet som vart fjerna eller null om det ikkje finst.
+	 * @param element elementet som skal fjernes.
+	 * @return elementet som ble fjernet eller null om det ikke finst.
 	 */
 	public T fjern(T element) {
 		return null;
 	}
 
 	/**
-	 * Lagar ein iterator som g�r gjennom alle element i treet i inorden.
+	 * Lager en iterator som g�r gjennom alle elementer i treet i inorden.
 	 * 
-	 * @return ein iterator som elementa i sortert rekkef�lge.
+	 * @return en iterator som elementene i sortert rekkef�lge.
 	 */
 	public Iterator<T> getInordenIterator() {
 		return null;
@@ -104,7 +104,7 @@ public class BS_Tre<T extends Comparable<? super T>> implements SoektreInterface
 
 	private int hoyde(BinaerTreNode<T> p) {
 		int svar = -1;
-		// p == null -> tomt tre som er basistille og svar blir null
+		// p == null -> tomt tre som er basistillfelle og svaret blir null
 
 		if (p != null) {
 			svar++;
